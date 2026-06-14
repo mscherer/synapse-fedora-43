@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-minimal@sha256:1e49d1043c41408df854cc0389d5e9f22eff2689490dfe6ddc5cac8cd4fea843
+FROM quay.io/fedora/fedora-minimal@sha256:6acf51b19968079f81c9b980641e50837b0fb8063b2e8510477671161510544b
 
 LABEL org.opencontainers.image.source="https://github.com/mscherer/stalwart-custom-container"
 LABEL maintainer="mscherer@"
