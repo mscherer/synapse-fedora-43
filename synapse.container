@@ -1,0 +1,16 @@
+[Unit]
+Description=Synapse Fedora 43 container
+After=local-fs.target
+
+[Container]
+Image=ghcr.io/mscherer/synapse-fedora-43:latest
+AutoUpdate=registry
+
+PublishPort=127.0.0.1:8008:8008
+
+Volume=/var/lib/synapse:/var/lib/synapse:Z,U
+Volume=/etc/synapse/:/etc/synapse/:ro
+
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target
