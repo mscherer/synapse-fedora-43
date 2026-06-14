@@ -4,7 +4,7 @@ LABEL org.opencontainers.image.source="https://github.com/mscherer/stalwart-cust
 LABEL maintainer="mscherer@"
 WORKDIR /srv/
 
-RUN dnf install -y matrix-synapse+postgres --setopt=install_weak_deps=False && dnf clean all
+RUN dnf install -y matrix-synapse+postgres matrix-synapse+systemd --setopt=install_weak_deps=False && dnf clean all
 
 COPY start.sh /usr/local/bin/start.sh
 
