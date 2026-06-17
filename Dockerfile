@@ -1,6 +1,6 @@
-FROM quay.io/fedora/fedora-minimal:44
+FROM quay.io/fedora/fedora-minimal:43
 
-LABEL org.opencontainers.image.source="https://github.com/mscherer/stalwart-custom-container"
+LABEL org.opencontainers.image.source="https://github.com/mscherer/synapse-fedora-43/"
 LABEL maintainer="mscherer@"
 WORKDIR /srv/
 
