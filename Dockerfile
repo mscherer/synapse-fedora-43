@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-minimal:43
+FROM quay.io/fedora/fedora-minimal:44
 
 LABEL org.opencontainers.image.source="https://github.com/mscherer/synapse-fedora-43/"
 LABEL maintainer="mscherer@"
